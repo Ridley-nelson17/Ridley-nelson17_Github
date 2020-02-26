@@ -1,0 +1,26 @@
+:root {
+    color-scheme: light dark;
+    --universal-font-family: Arial;
+}
+
+h1 {
+    color: white;
+    font-family: var(--universal-font-family);
+}
+
+body {
+    background-image: url("/backgrounds/orange-mountain.jpeg");
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url("/backgrounds/green-sky-mountains.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: auto 100%;
+        background-position: center;
+    }
+}
